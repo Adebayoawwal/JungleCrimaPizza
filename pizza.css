@@ -1,0 +1,97 @@
+body{
+   
+    background-color: #070606f5;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: inherit;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    gap: 153px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+    box-shadow: yellow 20px 1px 20px 5px;
+}
+ul{
+    position: relative;
+    gap: 203px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: yellow;
+
+}
+
+header{
+    position: absolute;
+    top: 150px;
+    width: 530px;
+}
+header h1{
+    font-size: 50px;
+}
+button{
+    background-color: #02020c;
+    height: 53px;
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: #02020c solid 1px;
+}
+@keyframes showContent{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav h1{
+    opacity: 0;
+    animation: showContent .9s .2s ease-in-out 1 forwards;
+}
+nav a{
+    opacity: 0;
+    animation: showContent .9s ease-in-out 1 forwards;
+}
+header h1{
+    opacity: 0;
+    animation: showContent .5s ease-in-out 1 forwards;
+}
+header .des{
+    opacity: 0;
+    animation: showContent .5s .3s ease-in-out 1 forwards;
+}
+header button{
+    opacity: 0;
+    animation: showContent .5s .6s ease-in-out 1 forwards;
+}
+.image{
+    position: absolute;
+    right: 20px;
+    top: 234px;
+}
+.image img{
+    opacity: 0;
+    animation: showContent .5s .6s ease-in-out 1 forwards;
+}
